@@ -1,0 +1,14 @@
+<menu>
+    <item title="About" message="http://github.com/statguy"/>
+    <item title="Submenu 1" subtitle="For developers...">
+        <menu>
+            <item title="Github" message="http://github.com/statguy/MultilevelMenuFragment"/>
+            <item title="Android developers" message="http://developer.android.com/index.html"/>
+        </menu>
+    </item>
+    <item title="Submenu 2" subtitle="For users...">
+        <menu>
+            <item title="Check later..." message="" />
+        </menu>
+    </item>
+</menu>
