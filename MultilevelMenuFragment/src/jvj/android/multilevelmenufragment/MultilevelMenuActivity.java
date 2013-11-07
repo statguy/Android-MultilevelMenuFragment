@@ -71,7 +71,7 @@ public abstract class MultilevelMenuActivity extends ActionBarActivity {
         			if (!subnode.getNodeName().equals("item"))
         				throw new Exception("Not an item node under menu.");
         			
-        			MultilevelMenuItemInterface menuItem = getNewMultilevelMenuItem();//itemFactory.newItem();
+        			MultilevelMenuItemInterface menuItem = getNewMultilevelMenuItem();
         			menuItem.parse(subnode);
         			items.add(menuItem);
         		}
