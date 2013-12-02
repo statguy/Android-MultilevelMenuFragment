@@ -16,13 +16,13 @@ limitations under the License.
 
 */
 
-package jvj.android.multilevelmenufragment;
+package com.codeandpop.android.multilevelmenufragment;
 
 import org.w3c.dom.Node;
 
 import android.app.Activity;
 
-public interface MultilevelMenuItemInterface
+public interface MultilevelMenuItem
 {
 	public void parse(Node node) throws Exception;
 	public void onSelected(Activity menuItemListener);

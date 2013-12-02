@@ -16,9 +16,9 @@ limitations under the License.
 
 */
 
-package jvj.android.multilevelmenufragment;
+package com.codeandpop.android.multilevelmenufragment;
 
-import jvj.android.multilevelmenufragment.MultilevelMenuItemInterface;
+import com.codeandpop.android.multilevelmenufragment.MultilevelMenuItem;
 
 import android.app.Activity;
 import android.support.v4.app.ListFragment;
@@ -44,7 +44,7 @@ public class MultilevelMenuFragment extends ListFragment {
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
 
-		MultilevelMenuItemInterface item = (MultilevelMenuItemInterface)getListAdapter().getItem(position);
+		MultilevelMenuItem item = (MultilevelMenuItem)getListAdapter().getItem(position);
 		item.onSelected(menuItemListener);
 	}
 }

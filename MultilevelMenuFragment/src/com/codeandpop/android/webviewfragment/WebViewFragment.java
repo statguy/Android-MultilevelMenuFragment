@@ -2,7 +2,7 @@
  * This is from Android sources adapted to support the support library.
  */
 
-package jvj.android.webviewfragment;
+package com.codeandpop.android.webviewfragment;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
