@@ -1,5 +1,5 @@
 /*
- * This is from Android sources adapted to support the support library.
+ * Taken from the Android sources and adapted to support the v7 support library.
  */
 
 package com.codeandpop.android.webviewfragment;
