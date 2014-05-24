@@ -46,8 +46,7 @@ public class MultilevelMenu {
 		this.resourceId = resourceId;
 	}
 	
-	public Node getMenuRootElement() throws IOException, ParserConfigurationException, SAXException
-	{
+	public Node getMenuRootElement() throws IOException, ParserConfigurationException, SAXException {
 		Resources res = context.getResources();
 		InputStream is = res.openRawResource(resourceId);
 			
@@ -60,18 +59,14 @@ public class MultilevelMenu {
 		return document.getDocumentElement();
 	}
 
-	public List<MultilevelMenuItem> parse(Node node) throws Exception
-	{
-        if (node.getNodeName().equals("menu"))
-        {
+	public List<MultilevelMenuItem> parse(Node node) throws Exception {
+        if (node.getNodeName().equals("menu")) {
         	List<MultilevelMenuItem> items = new ArrayList<MultilevelMenuItem>();
         	
         	NodeList subNodeList = node.getChildNodes();        	
-        	for (int i=0; i<subNodeList.getLength(); i++)
-        	{
+        	for (int i=0; i<subNodeList.getLength(); i++) {
         		Node subnode = subNodeList.item(i);
-        		if (subnode.getNodeType() == Node.ELEMENT_NODE)
-        		{
+        		if (subnode.getNodeType() == Node.ELEMENT_NODE) {
         			if (!subnode.getNodeName().equals("item"))
         				throw new Exception("Not an item node under menu.");
         			

@@ -4,6 +4,8 @@
 
 package com.codeandpop.android.webviewfragment;
 
+import com.codeandpop.multilevelmenufragment.R;
+
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -32,7 +34,9 @@ public class WebViewFragment extends Fragment {
         if (mWebView != null) {
             mWebView.destroy();
         }
-        mWebView = new WebView(getActivity());
+        mWebView = (WebView)inflater.inflate(R.layout.webview, container, false);
+        //mWebView = (WebView)findViewById(R.id.webview);
+        //mWebView = new WebView(getActivity());
         mIsWebViewAvailable = true;
         return mWebView;
     }
